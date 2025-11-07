@@ -1,0 +1,6 @@
+import express from "express";
+import { getAIInsights } from "../controllers/insightsController.js";
+
+const router = express.Router();
+router.get("/", getAIInsights);
+export default router;

@@ -10,6 +10,7 @@ import sentimentRoutes from "./routes/sentimentRoutes.js";
 import analyticsRoutes from "./routes/analyticsRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import aiRoute from "./routes/aiRoutes.js";
+import insightsRoutes from "./routes/insightsRoutes.js";
 
 dotenv.config();
 
@@ -36,6 +37,7 @@ app.use("/api/sentiment", sentimentRoutes);
 app.use("/api/analytics", analyticsRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/ai", aiRoute);
+app.use("/api/insights", insightsRoutes);
 
 
 // Connect to MongoDB before starting server
